@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.com</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    </head>
+<body>
+    <header class="header">
+        <h3 class="heading">Calculator</h3>
+        <span class="desc">Compute Accurately</span>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="inputarea">
+                <input type="text" class="input_box" id="result">
+                <input type="text" class="input_box" id="input_values">
+            </div>
+            <div class="digits">
+                <button class="buttons" id="one" onclick="btn_pressed(this.id)">1</button>
+                <button class="buttons" id="two" onclick="btn_pressed(this.id)">2</button>
+                <button class="buttons" id="three" onclick="btn_pressed(this.id)">3</button>
+                <button class="buttons" id="four" onclick="btn_pressed(this.id)">4</button>
+                <button class="buttons" id="five" onclick="btn_pressed(this.id)">5</button>
+                <button class="buttons" id="six" onclick="btn_pressed(this.id)">6</button>
+                <button class="buttons" id="seven" onclick="btn_pressed(this.id)">7</button>
+                <button class="buttons" id="eight" onclick="btn_pressed(this.id)">8</button>
+                <button class="buttons" id="nine" onclick="btn_pressed(this.id)">9</button>
+                <button class="buttons" id="zero" onclick="btn_pressed(this.id)">0</button>
+                <button class="buttons" id="plus" onclick="btn_pressed(this.id)">+</button>
+                <button class="buttons" id="minus" onclick="btn_pressed(this.id)">-</button>
+                <button class="buttons" id="multi" onclick="btn_pressed(this.id)">*</button>
+                <button class="buttons" id="div" onclick="btn_pressed(this.id)">/</button>
+                <button class="buttons" id="eql" onclick="btn_pressed(this.id)">=</button>
+                <button class="buttons" id="clear" onclick="cls()">CLS</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
